@@ -1,7 +1,7 @@
 import * as THREE from "/build/three.module.js";
 import {OrbitControls} from "/build/controls/OrbitControls.js";
 import {scene, camera, renderer, gui, setScene, setSceneLighting} from "./setup.js";
-import {GetGridPosition} from "./Helpers.js";
+import {GetGridPosition, SpawnBox} from "./Helpers.js";
 
 let tissue = null;
 
@@ -52,7 +52,7 @@ function CreateTissue(size, subd) {
     });
 
     tissue = new THREE.Mesh(tissue_geometry, tissue_material);
-    tissue.applyMatrix4(new THREE.Matrix4().makeRotationX(Math.PI/2))
+    tissue.applyMatrix4(new THREE.Matrix4().makeRotationX(-Math.PI/2))
     scene.add(tissue);
 }
 
