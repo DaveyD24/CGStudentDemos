@@ -9,7 +9,6 @@ const controls = new OrbitControls(camera, renderer.domElement);
 
 function UpdateScene() {
     controls.update();
-    earth.applyMatrix4(new THREE.Matrix4().makeRotationY(0.003));
     renderer.render(scene, camera);
 }
 renderer.setAnimationLoop(UpdateScene);
