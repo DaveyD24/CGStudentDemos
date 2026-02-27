@@ -20,6 +20,15 @@ export function setScene() {
 
 export function setSceneElements() {
 
+    const floorGeomtry = new THREE.BoxGeometry(16, 0.1, 16, 32, 1, 32);
+    const floorMaterial = new THREE.MeshBasicMaterial({
+        color: new THREE.Color(1,1,0),
+        wireframe: true
+    });
+    const floor = new THREE.Mesh(floorGeomtry, floorMaterial);
+    floor.position.y = -1;
+    scene.add(floor);
+
     const cubeGeometry = new THREE.BoxGeometry(2,2,2);
     const cubeMaterial = new THREE.MeshBasicMaterial({
         color: new THREE.Color(0,1,0),
