@@ -68,24 +68,14 @@ function updateScene() {
 
 function setupGUI() {
     const gui = new GUI();
-    const controls = {
-        CAMERA_LIGHT: cameraLight.color,
-        CAMERA_INTENSITY: cameraLight.intensity,
-        ANGLE: spotlight.angle,
-        PENUMBRA: spotlight.penumbra
-    };
-    gui.addColor(controls, 'CAMERA_LIGHT')
-        .name('Camera Light')
-        .onChange(value => {cameraLight.color = value;});
-    gui.add(controls, 'CAMERA_INTENSITY', 0, 1)
-        .name('Camera Light Intensity')
-        .onChange(value => {cameraLight.intensity = value;});
-    gui.add(controls, 'ANGLE', 0, 1)
-        .name('Angle')
-        .onChange(value => {spotlight.angle = value;});
-    gui.add(controls, 'PENUMBRA', 0, 1)
-        .name('Penumbra')
-        .onChange(value => {spotlight.penumbra = value;});
+    gui.addColor(cameraLight, 'color')
+        .name('Camera Light');
+    gui.add(cameraLight, 'intensity', 0, 1)
+        .name('Camera Light Intensity');
+    gui.add(spotlight, 'angle', 0, Math.PI / 2)
+        .name('Angle');
+    gui.add(spotlight, 'penumbra', 0, 1)
+        .name('Penumbra');
     repositionGUI();
 }
 
