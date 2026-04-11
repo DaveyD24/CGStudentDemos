@@ -1,0 +1,16 @@
+World map image by Nikhilesh Boppana.
+Provided at:
+    https://unsplash.com/photos/a-map-of-the-world-made-out-of-wood-j9jBsNg2pSw
+Under the Unsplash licence:
+    https://unsplash.com/license
+
+Brick image and normal by rubberduck.
+Provided at:
+    https://opengameart.org/content/50-free-textures-4-normalmaps
+Under the public domain
+
+Stand model by Jarlan Perez.
+Provided at:
+    https://poly.pizza/m/3p23RpcD--P
+Under the Creative Commons 3.0 license:
+    https://creativecommons.org/licenses/by/3.0/
