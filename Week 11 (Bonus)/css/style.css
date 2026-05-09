@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-y: hidden;
+}
+
+.overlay {
+    text-align: end;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: transform 0.6s ease;
+}
+
+.overlay ul {
+    position: absolute;
+    top: 0;
+    right: 200px;
+}
+
+.overlay li {
+    list-style-type: none;
+    height: 100vh;
+    font-family: 'Poppins';
+    margin-top: 20px;
+}
+
+.overlay li h1 {
+    font-size: 8rem;
+    line-height: 8rem;
+    color: white;
+}
+
+.overlay li p {
+    font-size: 1.5rem;
+    color: #999;
+}
+
+canvas {
+    position: absolute;
+    z-index: -2;
+}
+
+.box {
+    position: absolute;
+    top: 15%;
+    left: 14%;
+    width: 600px;
+    height: 650px;
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: all 0.1s linear;
+}
+
+.box .header {
+    height: 50px;
+    border: 1px solid grey;
+    color: #eee;
+    font-family: 'Space Mono';
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    position: absolute;
+    bottom: 5%;
+    right: 3%;
+    width: 150px;
+    height: 150px;
+    border: 2px solid white;
+    border-radius: 10px;
+    z-index: 0;
+}
